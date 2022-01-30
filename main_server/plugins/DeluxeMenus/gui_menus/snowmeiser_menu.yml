@@ -1,0 +1,36 @@
+menu_title: 'Snow Meiser''s Skins'
+open_command: snowmeiserskins
+size: 9
+
+items:
+  'defaultskin':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU2NGFkYWZlNTRjMGUwZDkxM2UxZWRjMmQ0OTY3MGY4MTA4OGRmMDRkZGQ4M2Y5YmFmZGFlODk4ZDc1ZWZiZSJ9fX0=
+    display_name: "&r&eDefault Skin"
+    lore:
+      - "Basic Snow Meiser Skin"
+    slot: 0
+    click_commands:
+     - '[player] skin url https://i.imgur.com/vLZ21i5.png'
+     - '[close]'
+  'mistymeiser':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmNzUxMzI0NmNhNzJhZTk5YTNmZDBiMDYwMzU0NDliM2M3ZTliOTFhODdmN2U4MzI0ZDNmZjc2NGY1NzAyZSJ9fX0=
+    display_name: "&r&6&lMisty Meiser"
+    lore:
+      - "Legendary"
+    slot: 2
+    click_commands:
+     - '[player] skin url https://i.imgur.com/19BTBQW.png'
+     - '[close]'
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: skins.snow_meiser.misty_meiser
+  'returntomain':
+    material: BARRIER
+    slot: 8
+    display_name: 'Return to Main Menu'
+    lore:
+      - 'click to return.'
+    click_commands:
+      - '[openguimenu] skins_menu'

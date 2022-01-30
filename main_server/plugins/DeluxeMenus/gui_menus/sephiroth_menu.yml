@@ -1,0 +1,65 @@
+menu_title: 'Sephiroth''s Skins'
+open_command: sephiskin
+size: 9
+
+items:
+  'defaultskin':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjUwMGI0ZDA2ZmQzNWYzZmYxMTUyZjBiNjExOGIzODNmNDc4OGE2NzRmYTk3MTYwOWFjNDgzZTJlMDExMGUzOSJ9fX0=
+    display_name: "&r&eDefault Skin"
+    lore:
+      - "Basic Sephiroth Skin"
+    slot: 0
+    click_commands:
+     - '[player] skin url https://i.imgur.com/IAC4Tm6.png'
+     - '[close]'
+  'dripiroth':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTczNDY4ZTBlYTcxYzM3NTBjNjBmYmM1YWQ2ZjQzMmIwNjhhMzQzNmFmOTYwNTlkMmIzZDA3NDQyODdiYTg0YiJ9fX0=
+    slot: 2
+    display_name: "&r&6&lDripiroth"
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: skins.sephiroth.dripiroth
+    lore:
+     - "Legendary"
+    click_commands:
+     - '[player] skin url https://i.imgur.com/vaZDn0g.png'
+     - '[close]'
+  'kawaiiroth':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGYwZjgxMjNjZjJhZDQxMTAwMTNhM2M5MDFlNDk5OTc5MTZlMTM4ZGM4YzljYjExMzk5MjEwZmNjZjk3MTM1In19fQ==
+    slot: 3
+    display_name: "&r&6&lKawaiiroth"
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: skins.sephiroth.kawaiiroth
+    lore:
+     - "Legendary"
+    click_commands:
+     - '[player] skin url https://i.imgur.com/jbo8Ozb.png'
+     - '[close]'
+  'shitless':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4NDkwODIxZDNjZmYyMDIxMDY5OTNlNGI3OTY0NGJkMWU4NTQzMTQyNzc0N2FjNjEzNWVmMzRlNzk4ZTExIn19fQ==
+    slot: 4
+    display_name: "&r&6&lShirtless Sephiroth"
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: skins.sephiroth.shirtless
+    lore:
+     - "Legendary"
+    click_commands:
+     - '[player] skin url https://i.imgur.com/inPw5KC.png'
+     - '[close]'
+    
+  'returntomain':
+    material: BARRIER
+    slot: 8
+    display_name: 'Return to Main Menu'
+    lore:
+      - 'click to return.'
+    click_commands:
+      - '[openguimenu] skins_menu'

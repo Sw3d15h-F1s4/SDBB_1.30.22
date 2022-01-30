@@ -1,0 +1,78 @@
+menu_title: 'Grug Stalin''s Skins'
+open_command: grugstalinskins
+size: 9
+
+items:
+  'defaultskin':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMzM2YzZmQ3M2I4MGI0ZjgzMGE0NjdiZGI4ZjQzZGZkY2FkNmUzODVmNDkyMTQ4OTdjMWI4NjIzYjA0MDdjIn19fQ==
+    display_name: "&r&eDefault Skin"
+    lore:
+      - "Basic Grug Stalin Skin"
+    slot: 0
+    click_commands:
+     - '[player] skin url https://i.imgur.com/FptCtid.png'
+     - '[close]'
+  'grughitler':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU2ZGQ5OTI0NmYwN2NlZjhlZjcxZWE0MDFkMGRiNDQwZGFkZjA4YWI3NGExOGY1YTM5NzI5Y2YyZTg0MzFiOCJ9fX0=
+    display_name: "&r&d&lGrug Hitler"
+    lore:
+      - "Epic"
+    slot: 2
+    click_commands:
+     - '[player] skin url https://i.imgur.com/RRuVEwg.png'
+     - '[close]'
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: skins.grug.grug_hitler
+  'goldengrug':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q2NTBlYjQ1OTA4ZDE1YWRlODIwNmIyYTE2YmQ1MmEzYzUxZDg4NjMxNWU1YmNkODVkZGQ5ZTAwM2JiMTAyNiJ9fX0=
+    display_name: "&r&c&lGolden Grug"
+    lore:
+      - "Rare"
+    slot: 3
+    click_commands:
+     - '[player] skin url https://i.imgur.com/G8tx6IO.png'
+     - '[close]'
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: skins.grug.gold_grug
+  "justgrug":
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDhjYWE0ZGVlNzQxYmZhOTA2ZDg1MDIyYzcwZmZlNmQ1ZDk5MDFlZDEwMTg2ZmM5MTgxYTM3ZjQ1YTcxMmQwNyJ9fX0=
+    display_name: "&r&aJust Grug"
+    lore:
+      - "Common"
+    slot: 4
+    click_commands:
+     - '[player] skin url https://i.imgur.com/OxBNqyl.png'
+     - '[close]'
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: skins.grug.just_grug
+  "dagrug":
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTlkNzRiOTZiM2UyMWFjNDU2ZWQzNWVjZmFhNTNhMzhlM2Q2YWY3Mjc2NTBkYTA1NzdiMjNkYmU2NGE5ZDBjMyJ9fX0=
+    display_name: "&r&5&lDa Grug"
+    lore:
+      - "&r&kAAA &l&4&lMYTHICAL SKIN &r&kAAA"
+    slot: 5
+    click_commands:
+     - '[player] skin url https://i.imgur.com/Kcfu2f2.png'
+     - '[close]'
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: skins.grug.dagrug
+  'returntomain':
+    material: BARRIER
+    slot: 8
+    display_name: 'Return to Main Menu'
+    lore:
+      - 'click to return.'
+    click_commands:
+      - '[openguimenu] skins_menu'

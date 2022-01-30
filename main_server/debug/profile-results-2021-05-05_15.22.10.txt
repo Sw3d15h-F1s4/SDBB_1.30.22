@@ -1,0 +1,568 @@
+---- Minecraft Profiler Results ----
+// I'm working as hard as I can!
+
+Version: 1.16.5
+Time span: 12813 ms
+Tick span: 257 ticks
+// This is approximately 20.06 ticks per second. It should be 20 ticks per second
+
+--- BEGIN PROFILE DUMP ---
+
+[00] nextTickWait(256/1) - 91.07%/91.07%
+[01] |   #getEntities 216/0
+[01] |   #runTask 2053/7
+[01] |   #getChunk 14649/57
+[01] |   unspecified(256/1) - 99.91%/91.02%
+[01] |   move(216/1) - 0.06%/0.05%
+[02] |   |   #getEntities 216/0
+[02] |   |   #getChunkCacheMiss 24/0
+[02] |   |   #getChunk 14119/54
+[01] |   rest(216/1) - 0.03%/0.03%
+[02] |   |   #getChunk 3948/15
+[00] tick(257/1) - 8.93%/8.93%
+[01] |   levels(257/1) - 84.15%/7.52%
+[02] |   |   ServerLevel[flat_testing] minecraft:overworld(257/1) - 98.38%/7.40%
+[03] |   |   |   tick(257/1) - 99.90%/7.39%
+[04] |   |   |   |   entities(257/1) - 44.95%/3.32%
+[05] |   |   |   |   |   tick(54998/214) - 52.50%/1.74%
+[06] |   |   |   |   |   |   minecraft:armor_stand(6612/26) - 50.53%/0.88%
+[07] |   |   |   |   |   |   |   #tickNonPassenger 6612/25
+[07] |   |   |   |   |   |   |   travel(6612/26) - 43.83%/0.39%
+[08] |   |   |   |   |   |   |   |   #getChunk 19836/77
+[08] |   |   |   |   |   |   |   |   move(6612/26) - 58.60%/0.23%
+[09] |   |   |   |   |   |   |   |   |   #getEntities 6612/25
+[09] |   |   |   |   |   |   |   |   |   #getChunkCacheMiss 1914/7
+[09] |   |   |   |   |   |   |   |   |   #getChunk 138610/539
+[08] |   |   |   |   |   |   |   |   rest(6612/26) - 26.76%/0.10%
+[09] |   |   |   |   |   |   |   |   |   #getChunk 79344/308
+[08] |   |   |   |   |   |   |   |   unspecified(6612/26) - 14.65%/0.06%
+[07] |   |   |   |   |   |   |   livingEntityBaseTick(6612/26) - 22.37%/0.20%
+[08] |   |   |   |   |   |   |   |   #getChunkCacheMiss 759/2
+[08] |   |   |   |   |   |   |   |   #getChunk 132240/514
+[07] |   |   |   |   |   |   |   unspecified(6612/26) - 19.20%/0.17%
+[07] |   |   |   |   |   |   |   entityBaseTick(6612/26) - 5.98%/0.05%
+[08] |   |   |   |   |   |   |   |   #getChunkCacheMiss 383/1
+[08] |   |   |   |   |   |   |   |   #getChunk 33060/128
+[07] |   |   |   |   |   |   |   push(6612/26) - 4.43%/0.04%
+[08] |   |   |   |   |   |   |   |   #getEntities 6612/25
+[08] |   |   |   |   |   |   |   |   #getChunk 12982/50
+[07] |   |   |   |   |   |   |   ai(6612/26) - 2.74%/0.02%
+[08] |   |   |   |   |   |   |   |   unspecified(6612/26) - 83.51%/0.02%
+[08] |   |   |   |   |   |   |   |   newAi(6612/26) - 16.49%/0.00%
+[07] |   |   |   |   |   |   |   rangeChecks(6612/26) - 0.71%/0.01%
+[07] |   |   |   |   |   |   |   headTurn(6612/26) - 0.39%/0.00%
+[07] |   |   |   |   |   |   |   jump(6612/26) - 0.36%/0.00%
+[06] |   |   |   |   |   |   minecraft:boat(3341/13) - 38.72%/0.67%
+[07] |   |   |   |   |   |   |   #getEntities 3341/13
+[07] |   |   |   |   |   |   |   #tickNonPassenger 3341/13
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 2313/9
+[07] |   |   |   |   |   |   |   #getChunk 148289/577
+[07] |   |   |   |   |   |   |   unspecified(3341/13) - 55.00%/0.37%
+[07] |   |   |   |   |   |   |   move(3341/13) - 27.07%/0.18%
+[08] |   |   |   |   |   |   |   |   #getEntities 3341/13
+[08] |   |   |   |   |   |   |   |   #getChunk 143149/557
+[07] |   |   |   |   |   |   |   rest(3341/13) - 11.52%/0.08%
+[08] |   |   |   |   |   |   |   |   #getChunk 53456/208
+[07] |   |   |   |   |   |   |   entityBaseTick(3341/13) - 6.40%/0.04%
+[08] |   |   |   |   |   |   |   |   #getChunk 39835/155
+[06] |   |   |   |   |   |   unspecified(54998/214) - 6.81%/0.12%
+[06] |   |   |   |   |   |   minecraft:item_frame(32342/126) - 3.23%/0.06%
+[07] |   |   |   |   |   |   |   #getEntities 708/2
+[07] |   |   |   |   |   |   |   #tickNonPassenger 32342/125
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 43/0
+[07] |   |   |   |   |   |   |   #getChunk 11188/43
+[06] |   |   |   |   |   |   minecraft:player(257/1) - 0.63%/0.01%
+[07] |   |   |   |   |   |   |   #tickNonPassenger 257/1
+[06] |   |   |   |   |   |   chunkCheck(200/1) - 0.08%/0.00%
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 20/0
+[07] |   |   |   |   |   |   |   #getChunk 20/0
+[05] |   |   |   |   |   blockEntities(257/1) - 37.52%/1.25%
+[06] |   |   |   |   |   |   minecraft:beehive(279616/1088) - 39.38%/0.49%
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 2313/9
+[07] |   |   |   |   |   |   |   #getChunk 279616/1088
+[06] |   |   |   |   |   |   unspecified(257/1) - 37.32%/0.47%
+[06] |   |   |   |   |   |   minecraft:hopper(7710/30) - 16.24%/0.20%
+[07] |   |   |   |   |   |   |   #getEntities 19275/75
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 1542/6
+[07] |   |   |   |   |   |   |   #getChunk 44718/174
+[06] |   |   |   |   |   |   minecraft:skull(20560/80) - 4.08%/0.05%
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 1285/5
+[07] |   |   |   |   |   |   |   #getChunk 20560/80
+[06] |   |   |   |   |   |   minecraft:chest(2313/9) - 0.65%/0.01%
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 514/2
+[07] |   |   |   |   |   |   |   #getChunk 2313/9
+[06] |   |   |   |   |   |   minecraft:ender_chest(1799/7) - 0.65%/0.01%
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 514/2
+[07] |   |   |   |   |   |   |   #getChunk 1799/7
+[06] |   |   |   |   |   |   minecraft:shulker_box(771/3) - 0.41%/0.01%
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 257/1
+[07] |   |   |   |   |   |   |   #getChunk 771/3
+[06] |   |   |   |   |   |   minecraft:bell(540/2) - 0.41%/0.01%
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 283/1
+[07] |   |   |   |   |   |   |   #getChunk 540/2
+[06] |   |   |   |   |   |   minecraft:campfire(257/1) - 0.32%/0.00%
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 257/1
+[07] |   |   |   |   |   |   |   #getChunk 257/1
+[06] |   |   |   |   |   |   minecraft:furnace(377/1) - 0.31%/0.00%
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 317/1
+[07] |   |   |   |   |   |   |   #getChunk 377/1
+[06] |   |   |   |   |   |   minecraft:trapped_chest(257/1) - 0.24%/0.00%
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 257/1
+[07] |   |   |   |   |   |   |   #getChunk 257/1
+[05] |   |   |   |   |   unspecified(257/1) - 8.67%/0.29%
+[05] |   |   |   |   |   checkDespawn(54998/214) - 0.77%/0.03%
+[05] |   |   |   |   |   remove(54998/214) - 0.54%/0.02%
+[05] |   |   |   |   |   pendingBlockEntities(257/1) - 0.01%/0.00%
+[04] |   |   |   |   chunkSource(257/1) - 43.48%/3.21%
+[05] |   |   |   |   |   chunks(257/1) - 94.94%/3.05%
+[06] |   |   |   |   |   |   pollingChunks(257/1) - 94.96%/2.90%
+[07] |   |   |   |   |   |   |   unspecified(257/1) - 59.32%/1.72%
+[07] |   |   |   |   |   |   |   tickBlocks(51829/202) - 21.56%/0.62%
+[08] |   |   |   |   |   |   |   |   unspecified(51829/202) - 50.65%/0.32%
+[08] |   |   |   |   |   |   |   |   randomTick(153660/598) - 49.35%/0.31%
+[09] |   |   |   |   |   |   |   |   |   #getChunkCacheMiss 10478/40
+[09] |   |   |   |   |   |   |   |   |   #getChunk 61292/238
+[07] |   |   |   |   |   |   |   broadcast(230786/898) - 15.54%/0.45%
+[08] |   |   |   |   |   |   |   |   #getChunkCacheMiss 2064/8
+[08] |   |   |   |   |   |   |   |   #getChunk 4664/18
+[07] |   |   |   |   |   |   |   iceandsnow(51829/202) - 2.41%/0.07%
+[08] |   |   |   |   |   |   |   |   #getChunkCacheMiss 6270/24
+[08] |   |   |   |   |   |   |   |   #getChunk 6364/24
+[07] |   |   |   |   |   |   |   naturalSpawnCount(257/1) - 0.61%/0.02%
+[07] |   |   |   |   |   |   |   thunder(51829/202) - 0.56%/0.02%
+[07] |   |   |   |   |   |   |   customSpawners(257/1) - 0.01%/0.00%
+[06] |   |   |   |   |   |   unspecified(257/1) - 5.04%/0.15%
+[05] |   |   |   |   |   purge(257/1) - 4.52%/0.15%
+[05] |   |   |   |   |   unload(257/1) - 0.33%/0.01%
+[06] |   |   |   |   |   |   chunk_unload(257/1) - 54.64%/0.01%
+[06] |   |   |   |   |   |   unspecified(257/1) - 34.90%/0.00%
+[06] |   |   |   |   |   |   poi(257/1) - 10.45%/0.00%
+[05] |   |   |   |   |   unspecified(257/1) - 0.21%/0.01%
+[04] |   |   |   |   tickPending(257/1) - 11.20%/0.83%
+[05] |   |   |   |   |   ticking(514/2) - 97.18%/0.80%
+[06] |   |   |   |   |   |   #getChunkCacheMiss 4111/15
+[06] |   |   |   |   |   |   #getChunk 77444/301
+[06] |   |   |   |   |   |   unspecified(514/2) - 16.25%/0.13%
+[06] |   |   |   |   |   |   execute as @e[tag=warpPoint] at @s run scoreboard players set @a[distance=0..1,scores={Status=0}] Status 1(257/1) - 15.55%/0.13%
+[06] |   |   |   |   |   |   /execute as @a[scores={SnowballSec=1}] run tellraw @a ["",{"text":"\n"},{"text":"[","color":"dark_gray"},{"text":"Explosive Snowballs","bold":true,"color":"white"},{"text":"] ","color":"dark_gray"},{"text":"Click ","color":"gray"},{"text":"HERE","underlined":true,"color":"aqua","clickEvent":{"action":"open_url","value":"www.youtube.com/commandgeek"}},{"text":" to view my Youtube Channel!","color":"gray"},{"text":"\n "}](257/1) - 10.46%/0.08%
+[06] |   |   |   |   |   |   /execute as @e[type=minecraft:snowball,scores={SnowballSec=5..},nbt={Item:{tag:{display:{Name:'{"text":"Super Snowball"}'}}}}] at @s unless blocks ~1 ~1 ~1 ~-1 ~-1 ~-1 ~ ~ ~ all run summon fireball ~ ~1 ~ {direction:[0.0,-5.0,0.0],ExplosionPower:2}(257/1) - 10.03%/0.08%
+[06] |   |   |   |   |   |   effect give @a[distance=0..20] minecraft:saturation 1 1 true(514/2) - 9.28%/0.07%
+[07] |   |   |   |   |   |   |   #getChunk 514/2
+[06] |   |   |   |   |   |   /execute as @e[type=minecraft:snowball,scores={SnowballSec=5..},nbt={Item:{tag:{display:{Name:'{"text":"Ultra Snowball"}'}}}}] at @s unless blocks ~1 ~1 ~1 ~-1 ~-1 ~-1 ~ ~ ~ all run summon fireball ~ ~-1 ~ {direction:[0.0,-5.0,0.0],ExplosionPower2}(257/1) - 5.97%/0.05%
+[07] |   |   |   |   |   |   |   #getChunk 514/2
+[06] |   |   |   |   |   |   /kill @e[type=arrow,nbt={inGround:1b}](257/1) - 5.69%/0.05%
+[07] |   |   |   |   |   |   |   #getChunk 257/1
+[06] |   |   |   |   |   |   execute as @a at @s unless entity @e[tag=warpPoint,distance=0..1] run scoreboard players set @s Status 0(257/1) - 4.15%/0.03%
+[07] |   |   |   |   |   |   |   #getEntities 257/1
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 735/2
+[07] |   |   |   |   |   |   |   #getChunk 897/3
+[06] |   |   |   |   |   |   tp @p[scores={Status=1}] @e[distance=1..,tag=warpPoint,sort=random,limit=1](257/1) - 3.63%/0.03%
+[07] |   |   |   |   |   |   |   #getChunk 257/1
+[06] |   |   |   |   |   |   /execute as @e[type=minecraft:snowball,scores={SnowballSec=5..},nbt={Item:{tag:{display:{Name:'{"text":"Super Snowball"}'}}}}] at @s unless blocks ~1 ~1 ~1 ~-1 ~-1 ~-1 ~ ~ ~ all air run kill @s(257/1) - 3.02%/0.02%
+[07] |   |   |   |   |   |   |   #getChunk 514/2
+[06] |   |   |   |   |   |   execute if entity @a[scores={gameState=2}] unless entity @a[x=326,y=11,z=410,dx=11,dy=5,dz=11] run function melee:util/mapselect(257/1) - 2.92%/0.02%
+[06] |   |   |   |   |   |   /scoreboard players add @e[type=minecraft:snowball] SnowballSec 1(257/1) - 2.50%/0.02%
+[07] |   |   |   |   |   |   |   #getChunk 257/1
+[06] |   |   |   |   |   |   /scoreboard objectives add SnowballSec dummy(257/1) - 2.22%/0.02%
+[07] |   |   |   |   |   |   |   #getChunk 257/1
+[06] |   |   |   |   |   |   /effect give @p[distance=30,team=!] minecraft:saturation 5 1 true(257/1) - 2.19%/0.02%
+[07] |   |   |   |   |   |   |   #getChunk 257/1
+[06] |   |   |   |   |   |   /scoreboard players set @a SnowballSec 0(257/1) - 2.18%/0.02%
+[07] |   |   |   |   |   |   |   #getChunk 257/1
+[06] |   |   |   |   |   |   /execute as @e[type=minecraft:snowball,scores={SnowballSec=5..},nbt={Item:{tag:{display:{Name:'{"text":"Ultra Snowball"}'}}}}] at @s unless blocks ~1 ~1 ~1 ~-1 ~-1 ~-1 ~ ~ ~ all air run kill @s(257/1) - 1.94%/0.02%
+[07] |   |   |   |   |   |   |   #getChunk 514/2
+[06] |   |   |   |   |   |   scoreboard players set @a[scores={Status=1}] Status 2(257/1) - 1.13%/0.01%
+[07] |   |   |   |   |   |   |   #getChunk 257/1
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"FUCK YOU BALTIMORE","color":"gold","bold":true}(1/0) - 0.10%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"MMMM MMMM YEAH YEAH MMM MM YE YE","color":"yellow","bold":true}(1/0) - 0.06%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"EAT MY SHORTS","color":"aqua","bold":false}(1/0) - 0.06%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"you like sight?, me neither","color":"red","bold":false}(1/0) - 0.06%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"nrrrrgggg dinkleburg","color":"yellow","bold":true}(1/0) - 0.06%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"HAHAHAHHHAHAHAHAHHAHAHAHA","color":"light_purple","bold":true}(1/0) - 0.06%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"SNAP BACK TO REALITY","color":"aqua","bold":true}(1/0) - 0.05%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"GET GOOD LOOSER","color":"dark_red","bold":true}(1/0) - 0.05%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"YA LIKE JAZZ","color":"green","bold":false}(1/0) - 0.05%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"GO BACK TO ROBLOX","color":"pink","bold":false}(1/0) - 0.05%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"Sonic OC Nevin Main","color":"yellow","bold":true}(1/0) - 0.05%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"DOIN YOUR MOM","color":"yellow","bold":false}(1/0) - 0.05%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"THATS MY MOTHER IN LAW","color":"blue","bold":false}(1/0) - 0.05%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"Not A  RE APER Main","color":"white","bold":true}(1/0) - 0.05%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"thats not a","color":"gold","bold":false}(1/0) - 0.05%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[06] |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"YOUR MAIN IS TRASH","color":"green","bold":true}(1/0) - 0.05%/0.00%
+[07] |   |   |   |   |   |   |   #getChunk 1/0
+[05] |   |   |   |   |   cleaning(514/2) - 1.66%/0.01%
+[05] |   |   |   |   |   unspecified(257/1) - 1.16%/0.01%
+[04] |   |   |   |   unspecified(257/1) - 0.16%/0.01%
+[04] |   |   |   |   weather(257/1) - 0.11%/0.01%
+[04] |   |   |   |   blockEvents(257/1) - 0.09%/0.01%
+[05] |   |   |   |   |   #getChunkCacheMiss 52/0
+[05] |   |   |   |   |   #getChunk 182/0
+[04] |   |   |   |   raid(257/1) - 0.01%/0.00%
+[04] |   |   |   |   world border(257/1) - 0.01%/0.00%
+[03] |   |   |   timeSync(12/0) - 0.07%/0.00%
+[03] |   |   |   unspecified(257/1) - 0.04%/0.00%
+[02] |   |   ServerLevel[flat_testing] minecraft:the_nether(257/1) - 0.79%/0.06%
+[03] |   |   |   tick(257/1) - 95.90%/0.06%
+[04] |   |   |   |   chunkSource(257/1) - 57.07%/0.03%
+[05] |   |   |   |   |   chunks(257/1) - 56.95%/0.02%
+[06] |   |   |   |   |   |   pollingChunks(257/1) - 67.01%/0.01%
+[07] |   |   |   |   |   |   |   unspecified(257/1) - 58.80%/0.01%
+[07] |   |   |   |   |   |   |   naturalSpawnCount(257/1) - 39.21%/0.00%
+[07] |   |   |   |   |   |   |   customSpawners(257/1) - 1.99%/0.00%
+[06] |   |   |   |   |   |   unspecified(257/1) - 32.99%/0.01%
+[05] |   |   |   |   |   unload(257/1) - 19.60%/0.01%
+[06] |   |   |   |   |   |   unspecified(257/1) - 46.28%/0.00%
+[06] |   |   |   |   |   |   chunk_unload(257/1) - 39.59%/0.00%
+[06] |   |   |   |   |   |   poi(257/1) - 14.13%/0.00%
+[05] |   |   |   |   |   unspecified(257/1) - 13.68%/0.00%
+[05] |   |   |   |   |   purge(257/1) - 9.77%/0.00%
+[04] |   |   |   |   unspecified(257/1) - 15.16%/0.01%
+[04] |   |   |   |   tickPending(257/1) - 11.52%/0.01%
+[05] |   |   |   |   |   unspecified(257/1) - 81.10%/0.01%
+[05] |   |   |   |   |   ticking(514/2) - 11.43%/0.00%
+[05] |   |   |   |   |   cleaning(514/2) - 7.47%/0.00%
+[04] |   |   |   |   weather(257/1) - 8.53%/0.00%
+[04] |   |   |   |   entities(257/1) - 4.94%/0.00%
+[04] |   |   |   |   world border(257/1) - 1.16%/0.00%
+[04] |   |   |   |   raid(257/1) - 1.06%/0.00%
+[04] |   |   |   |   blockEvents(257/1) - 0.55%/0.00%
+[03] |   |   |   unspecified(257/1) - 3.25%/0.00%
+[03] |   |   |   timeSync(12/0) - 0.85%/0.00%
+[02] |   |   unspecified(257/1) - 0.48%/0.04%
+[02] |   |   ServerLevel[flat_testing] minecraft:the_end(257/1) - 0.35%/0.03%
+[03] |   |   |   tick(257/1) - 95.52%/0.02%
+[04] |   |   |   |   chunkSource(257/1) - 51.57%/0.01%
+[05] |   |   |   |   |   chunks(257/1) - 45.26%/0.01%
+[06] |   |   |   |   |   |   pollingChunks(257/1) - 67.59%/0.00%
+[07] |   |   |   |   |   |   |   unspecified(257/1) - 80.70%/0.00%
+[07] |   |   |   |   |   |   |   naturalSpawnCount(257/1) - 16.70%/0.00%
+[07] |   |   |   |   |   |   |   customSpawners(257/1) - 2.60%/0.00%
+[06] |   |   |   |   |   |   unspecified(257/1) - 32.41%/0.00%
+[05] |   |   |   |   |   unspecified(257/1) - 24.91%/0.00%
+[05] |   |   |   |   |   unload(257/1) - 21.18%/0.00%
+[06] |   |   |   |   |   |   unspecified(257/1) - 65.43%/0.00%
+[06] |   |   |   |   |   |   poi(257/1) - 17.69%/0.00%
+[06] |   |   |   |   |   |   chunk_unload(257/1) - 16.88%/0.00%
+[05] |   |   |   |   |   purge(257/1) - 8.65%/0.00%
+[04] |   |   |   |   unspecified(257/1) - 26.51%/0.01%
+[04] |   |   |   |   tickPending(257/1) - 15.33%/0.00%
+[05] |   |   |   |   |   unspecified(257/1) - 87.54%/0.00%
+[05] |   |   |   |   |   ticking(514/2) - 6.99%/0.00%
+[05] |   |   |   |   |   cleaning(514/2) - 5.47%/0.00%
+[04] |   |   |   |   weather(257/1) - 3.87%/0.00%
+[04] |   |   |   |   entities(257/1) - 0.90%/0.00%
+[04] |   |   |   |   raid(257/1) - 0.79%/0.00%
+[04] |   |   |   |   world border(257/1) - 0.61%/0.00%
+[04] |   |   |   |   blockEvents(257/1) - 0.41%/0.00%
+[03] |   |   |   unspecified(257/1) - 4.30%/0.00%
+[03] |   |   |   timeSync(12/0) - 0.18%/0.00%
+[01] |   commandFunctions(257/1) - 12.63%/1.13%
+[02] |   |   minecraft:tick(257/1) - 99.16%/1.12%
+[03] |   |   |   effect give @a[nbt=!{SelectedItem:{id:"minecraft:shield"}},scores={heroType=2,gameState=1}] minecraft:jump_boost 1 2 true(257/1) - 53.54%/0.60%
+[03] |   |   |   unspecified(257/1) - 15.38%/0.17%
+[03] |   |   |   scoreboard players remove @e[scores={helperTimer=0..}] helperTimer 1(257/1) - 10.33%/0.12%
+[03] |   |   |   kill @e[type=item](257/1) - 3.11%/0.03%
+[03] |   |   |   execute if entity @a[scores={gameState=1}] run function melee:passive_abilities(257/1) - 2.71%/0.03%
+[03] |   |   |   effect give @a[scores={heroType=1,gameState=1}] minecraft:jump_boost 1 1 true(257/1) - 1.58%/0.02%
+[03] |   |   |   bossbar set summon_count players @a[scores={heroType=10,gameState=1}](257/1) - 1.45%/0.02%
+[03] |   |   |   scoreboard players set Blue TeamScore 0(257/1) - 0.94%/0.01%
+[03] |   |   |   execute at @a[scores={heroType=1,gameState=1}] run effect give @a[distance=1..6] minecraft:slowness 1 0 true(257/1) - 0.48%/0.01%
+[03] |   |   |   execute as @a[team=Red,scores={gameState=1}] at @s run particle minecraft:dust 1 0 0 1 ~ ~1 ~ 0.1 0.2 0.1 0 3 normal @a[team=!Red](257/1) - 0.42%/0.00%
+[03] |   |   |   execute if score Red TeamScore >= Goal TeamScore run function melee:util/endgame(257/1) - 0.41%/0.00%
+[03] |   |   |   scoreboard players set @a ability 0(257/1) - 0.38%/0.00%
+[03] |   |   |   scoreboard players operation Blue TeamScore += @a[team=Red] PlayerScore(257/1) - 0.37%/0.00%
+[03] |   |   |   scoreboard players remove @a[scores={ultTimer=0..}] ultTimer 1(257/1) - 0.36%/0.00%
+[03] |   |   |   execute if entity @a[scores={gameState=1}] run function melee:util/calcscore(257/1) - 0.36%/0.00%
+[03] |   |   |   scoreboard players remove @a[scores={abilityTimer=0..}] abilityTimer 1(257/1) - 0.28%/0.00%
+[03] |   |   |   execute if entity @a[scores={gameState=1}] run function melee:util/giveallkits(257/1) - 0.27%/0.00%
+[03] |   |   |   execute as @a[scores={ability=1},nbt={SelectedItem:{tag:{Tags:["laser"]}}}] at @s run function melee:ayanami/laser_cast(257/1) - 0.24%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=5,gameState=1}] minecraft:night_vision 30 1 true(257/1) - 0.22%/0.00%
+[03] |   |   |   scoreboard players operation Red SmoothTeamScore = Red TeamScore(257/1) - 0.21%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=1,ability=1}] run function melee:drip_sam/detect(257/1) - 0.20%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=10,gameState=1}] minecraft:speed 1 1 true(257/1) - 0.20%/0.00%
+[03] |   |   |   scoreboard players remove @a[scores={spinTimer=0..}] spinTimer 1(257/1) - 0.19%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=3,gameState=1}] minecraft:speed 1 1 true(257/1) - 0.18%/0.00%
+[03] |   |   |   scoreboard players remove @a[scores={ability2Timer=0..}] ability2Timer 1(257/1) - 0.18%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=4,gameState=1}] minecraft:jump_boost 1 2 true(257/1) - 0.18%/0.00%
+[03] |   |   |   function melee:reset(514/2) - 0.18%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=3,gameState=1}] minecraft:jump_boost 1 1 true(257/1) - 0.17%/0.00%
+[03] |   |   |   scoreboard players remove @a[scores={helperTimer2=0..}] helperTimer2 1(257/1) - 0.17%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=6,gameState=1}] minecraft:regeneration 3 0 true(257/1) - 0.17%/0.00%
+[03] |   |   |   scoreboard players operation Red TeamScore += @a[team=Blue] PlayerScore(257/1) - 0.17%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=7,gameState=1}] minecraft:speed 1 4 true(257/1) - 0.16%/0.00%
+[03] |   |   |   scoreboard players remove @a[scores={ability3Timer=0..}] ability3Timer 1(257/1) - 0.16%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=4,gameState=1}] minecraft:strength 1 1 true(257/1) - 0.16%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=10,gameState=1}] minecraft:weakness 1 0 true(257/1) - 0.16%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=8,gameState=1}] minecraft:glowing 1 0 true(257/1) - 0.16%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=5,gameState=1}] minecraft:slow_falling 1 0 true(257/1) - 0.16%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=7,gameState=1}] minecraft:mining_fatigue 1 1 true(257/1) - 0.15%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=5,gameState=1}] minecraft:speed 1 0 true(257/1) - 0.15%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=6,gameState=1}] minecraft:slow_falling 1 0 true(257/1) - 0.15%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=4,gameState=1}] minecraft:slowness 1 1 true(257/1) - 0.15%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=11,gameState=1}] minecraft:saturation 1 1 true(257/1) - 0.15%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=1,gameState=1}] as @a[scores={heroType=1,gameState=1}] run function melee:drip_sam/givekit(257/1) - 0.15%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=2,gameState=1}] slowness 1 0 true(257/1) - 0.15%/0.00%
+[03] |   |   |   scoreboard players set Red TeamScore 0(257/1) - 0.14%/0.00%
+[03] |   |   |   function melee:passive_abilities(257/1) - 0.14%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=8,gameState=1}] minecraft:jump_boost 1 1 true(257/1) - 0.14%/0.00%
+[03] |   |   |   effect give @a[scores={heroType=8,gameState=1}] minecraft:slow_falling 1 0 true(257/1) - 0.14%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=10,gameState=1}] as @a[scores={heroType=10,gameState=1}] run function melee:grugstalin/givekit(257/1) - 0.13%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=2,gameState=1}] as @a[scores={heroType=2,gameState=1}] run function melee:bill_clinton/givekit(257/1) - 0.13%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=8,gameState=1}] as @a[scores={heroType=8,gameState=1}] run function melee:ayanami/givekit(257/1) - 0.12%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=3,ability=1}] run function melee:hotsuke/detect(257/1) - 0.11%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=11,gameState=1}] as @a[scores={heroType=11,gameState=1}] run function melee:liam/givekit(257/1) - 0.11%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=3,gameState=1}] as @a[scores={heroType=3,gameState=1}] run function melee:hotsuke/givekit(257/1) - 0.11%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=9,gameState=1}] as @a[scores={heroType=9,gameState=1}] run function melee:sonicnevin/givekit(257/1) - 0.11%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=6,gameState=1}] as @a[scores={heroType=6,gameState=1}] run function melee:hibbins/givekit(257/1) - 0.10%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=5,gameState=1}] as @a[scores={heroType=5,gameState=1}] run function melee:erased/givekit(257/1) - 0.10%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=7,gameState=1}] as @a[scores={heroType=7,gameState=1}] run function melee:reaper/givekit(257/1) - 0.10%/0.00%
+[03] |   |   |   execute if score Blue TeamScore >= Goal TeamScore run function melee:util/endgame(257/1) - 0.10%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=4,gameState=1}] as @a[scores={heroType=4,gameState=1}] run function melee:bigfloppa/givekit(257/1) - 0.10%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=5,ability=1}] run function melee:erased/detect(257/1) - 0.09%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=2,ability=1}] run function melee:bill_clinton/detect(257/1) - 0.09%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=6,ability=1}] run function melee:hibbins/detect(257/1) - 0.09%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=10,ability=1}] run function melee:grugstalin/detect(257/1) - 0.09%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=11,ability=1}] run function melee:liam/detect(257/1) - 0.09%/0.00%
+[03] |   |   |   execute as @a[team=Blue,scores={gameState=1}] at @s run particle minecraft:dust 0 0 1 1 ~ ~1 ~ 0.1 0.2 0.1 0 3 normal @a[team=!Blue](257/1) - 0.09%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=12,gameState=1}] as @a[scores={heroType=12,gameState=1}] run function melee:snowmeiser/givekit(257/1) - 0.08%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=12,ability=1}] run function melee:snowmeiser/detect(257/1) - 0.08%/0.00%
+[03] |   |   |   scoreboard players operation Blue SmoothTeamScore = Blue TeamScore(257/1) - 0.08%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=7,ability=1}] run function melee:reaper/detect(257/1) - 0.08%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=4,ability=1}] run function melee:bigfloppa/detect(257/1) - 0.07%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=9,ability=1}] run function melee:sonicnevin/detect(257/1) - 0.07%/0.00%
+[03] |   |   |   execute if entity @a[scores={heroType=8,ability=1}] run function melee:ayanami/detect(257/1) - 0.06%/0.00%
+[03] |   |   |   function melee:util/calcscore(257/1) - 0.02%/0.00%
+[03] |   |   |   function melee:util/giveallkits(257/1) - 0.02%/0.00%
+[02] |   |   unspecified(257/1) - 0.84%/0.01%
+[01] |   connection(257/1) - 2.91%/0.26%
+[02] |   |   #getEntities 771/3
+[02] |   |   #getChunkCacheMiss 178/0
+[02] |   |   #getChunk 26290/102
+[02] |   |   unspecified(257/1) - 64.27%/0.17%
+[02] |   |   travel(257/1) - 20.28%/0.05%
+[03] |   |   |   #getChunk 1028/4
+[03] |   |   |   rest(257/1) - 66.08%/0.03%
+[04] |   |   |   |   #getChunk 4586/17
+[03] |   |   |   move(257/1) - 21.82%/0.01%
+[04] |   |   |   |   #getEntities 257/1
+[04] |   |   |   |   #getChunkCacheMiss 71/0
+[04] |   |   |   |   #getChunk 409/1
+[03] |   |   |   unspecified(257/1) - 12.10%/0.01%
+[02] |   |   livingEntityBaseTick(257/1) - 6.12%/0.02%
+[03] |   |   |   #getChunkCacheMiss 58/0
+[03] |   |   |   #getChunk 8050/31
+[02] |   |   entityBaseTick(257/1) - 3.83%/0.01%
+[03] |   |   |   #getChunkCacheMiss 280/1
+[03] |   |   |   #getChunk 3950/15
+[02] |   |   push(257/1) - 2.13%/0.01%
+[03] |   |   |   #getEntities 257/1
+[03] |   |   |   #getChunk 409/1
+[02] |   |   ai(257/1) - 1.58%/0.00%
+[03] |   |   |   newAi(257/1) - 57.01%/0.00%
+[03] |   |   |   unspecified(257/1) - 42.99%/0.00%
+[02] |   |   headTurn(257/1) - 0.80%/0.00%
+[02] |   |   keepAlive(257/1) - 0.75%/0.00%
+[02] |   |   rangeChecks(257/1) - 0.16%/0.00%
+[02] |   |   jump(257/1) - 0.08%/0.00%
+[01] |   unspecified(257/1) - 0.24%/0.02%
+[01] |   tallying(257/1) - 0.03%/0.00%
+[01] |   snooper(257/1) - 0.02%/0.00%
+[01] |   players(257/1) - 0.02%/0.00%
+[01] |   server gui refresh(257/1) - 0.01%/0.00%
+--- END PROFILE DUMP ---
+
+--- BEGIN COUNTER DUMP ---
+
+-- Counter: getChunk --
+[00] root total:0/1395369 average: 0/5429
+[01] |   tick total:0/1362653 average: 0/5302
+[02] |   |   levels total:0/1317931 average: 0/5128
+[03] |   |   |   ServerLevel[flat_testing] minecraft:overworld total:0/1317931 average: 0/5128
+[04] |   |   |   |   tick total:0/1317931 average: 0/5128
+[05] |   |   |   |   |   entities total:0/1163217 average: 0/4526
+[06] |   |   |   |   |   |   tick total:0/812009 average: 0/3159
+[07] |   |   |   |   |   |   |   minecraft:armor_stand total:0/416072 average: 0/1618
+[08] |   |   |   |   |   |   |   |   travel total:19836/237790 average: 77/925
+[09] |   |   |   |   |   |   |   |   |   move total:138610/138610 average: 539/539
+[09] |   |   |   |   |   |   |   |   |   rest total:79344/79344 average: 308/308
+[08] |   |   |   |   |   |   |   |   livingEntityBaseTick total:132240/132240 average: 514/514
+[08] |   |   |   |   |   |   |   |   entityBaseTick total:33060/33060 average: 128/128
+[08] |   |   |   |   |   |   |   |   push total:12982/12982 average: 50/50
+[07] |   |   |   |   |   |   |   minecraft:boat total:148289/384729 average: 577/1497
+[08] |   |   |   |   |   |   |   |   move total:143149/143149 average: 557/557
+[08] |   |   |   |   |   |   |   |   rest total:53456/53456 average: 208/208
+[08] |   |   |   |   |   |   |   |   entityBaseTick total:39835/39835 average: 155/155
+[07] |   |   |   |   |   |   |   minecraft:item_frame total:11188/11188 average: 43/43
+[07] |   |   |   |   |   |   |   chunkCheck total:20/20 average: 0/0
+[06] |   |   |   |   |   |   blockEntities total:0/351208 average: 0/1366
+[07] |   |   |   |   |   |   |   minecraft:beehive total:279616/279616 average: 1088/1088
+[07] |   |   |   |   |   |   |   minecraft:hopper total:44718/44718 average: 174/174
+[07] |   |   |   |   |   |   |   minecraft:skull total:20560/20560 average: 80/80
+[07] |   |   |   |   |   |   |   minecraft:chest total:2313/2313 average: 9/9
+[07] |   |   |   |   |   |   |   minecraft:ender_chest total:1799/1799 average: 7/7
+[07] |   |   |   |   |   |   |   minecraft:shulker_box total:771/771 average: 3/3
+[07] |   |   |   |   |   |   |   minecraft:bell total:540/540 average: 2/2
+[07] |   |   |   |   |   |   |   minecraft:furnace total:377/377 average: 1/1
+[07] |   |   |   |   |   |   |   minecraft:trapped_chest total:257/257 average: 1/1
+[07] |   |   |   |   |   |   |   minecraft:campfire total:257/257 average: 1/1
+[05] |   |   |   |   |   tickPending total:0/82212 average: 0/319
+[06] |   |   |   |   |   |   ticking total:77444/82212 average: 301/319
+[07] |   |   |   |   |   |   |   execute as @a at @s unless entity @e[tag=warpPoint,distance=0..1] run scoreboard players set @s Status 0 total:897/897 average: 3/3
+[07] |   |   |   |   |   |   |   effect give @a[distance=0..20] minecraft:saturation 1 1 true total:514/514 average: 2/2
+[07] |   |   |   |   |   |   |   /execute as @e[type=minecraft:snowball,scores={SnowballSec=5..},nbt={Item:{tag:{display:{Name:'{"text":"Super Snowball"}'}}}}] at @s unless blocks ~1 ~1 ~1 ~-1 ~-1 ~-1 ~ ~ ~ all air run kill @s total:514/514 average: 2/2
+[07] |   |   |   |   |   |   |   /execute as @e[type=minecraft:snowball,scores={SnowballSec=5..},nbt={Item:{tag:{display:{Name:'{"text":"Ultra Snowball"}'}}}}] at @s unless blocks ~1 ~1 ~1 ~-1 ~-1 ~-1 ~ ~ ~ all run summon fireball ~ ~-1 ~ {direction:[0.0,-5.0,0.0],ExplosionPower2} total:514/514 average: 2/2
+[07] |   |   |   |   |   |   |   /execute as @e[type=minecraft:snowball,scores={SnowballSec=5..},nbt={Item:{tag:{display:{Name:'{"text":"Ultra Snowball"}'}}}}] at @s unless blocks ~1 ~1 ~1 ~-1 ~-1 ~-1 ~ ~ ~ all air run kill @s total:514/514 average: 2/2
+[07] |   |   |   |   |   |   |   /scoreboard players set @a SnowballSec 0 total:257/257 average: 1/1
+[07] |   |   |   |   |   |   |   tp @p[scores={Status=1}] @e[distance=1..,tag=warpPoint,sort=random,limit=1] total:257/257 average: 1/1
+[07] |   |   |   |   |   |   |   scoreboard players set @a[scores={Status=1}] Status 2 total:257/257 average: 1/1
+[07] |   |   |   |   |   |   |   /effect give @p[distance=30,team=!] minecraft:saturation 5 1 true total:257/257 average: 1/1
+[07] |   |   |   |   |   |   |   /kill @e[type=arrow,nbt={inGround:1b}] total:257/257 average: 1/1
+[07] |   |   |   |   |   |   |   /scoreboard objectives add SnowballSec dummy total:257/257 average: 1/1
+[07] |   |   |   |   |   |   |   /scoreboard players add @e[type=minecraft:snowball] SnowballSec 1 total:257/257 average: 1/1
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"Not A  RE APER Main","color":"white","bold":true} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"YOUR MAIN IS TRASH","color":"green","bold":true} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"Sonic OC Nevin Main","color":"yellow","bold":true} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"SNAP BACK TO REALITY","color":"aqua","bold":true} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"YA LIKE JAZZ","color":"green","bold":false} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"FUCK YOU BALTIMORE","color":"gold","bold":true} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"thats not a","color":"gold","bold":false} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"GO BACK TO ROBLOX","color":"pink","bold":false} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"THATS MY MOTHER IN LAW","color":"blue","bold":false} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"DOIN YOUR MOM","color":"yellow","bold":false} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"GET GOOD LOOSER","color":"dark_red","bold":true} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"you like sight?, me neither","color":"red","bold":false} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"MMMM MMMM YEAH YEAH MMM MM YE YE","color":"yellow","bold":true} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"EAT MY SHORTS","color":"aqua","bold":false} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"nrrrrgggg dinkleburg","color":"yellow","bold":true} total:1/1 average: 0/0
+[07] |   |   |   |   |   |   |   /title @p[team=!,scores={heroType=7}] title {"text":"HAHAHAHHHAHAHAHAHHAHAHAHA","color":"light_purple","bold":true} total:1/1 average: 0/0
+[05] |   |   |   |   |   chunkSource total:0/72320 average: 0/281
+[06] |   |   |   |   |   |   chunks total:0/72320 average: 0/281
+[07] |   |   |   |   |   |   |   pollingChunks total:0/72320 average: 0/281
+[08] |   |   |   |   |   |   |   |   tickBlocks total:0/61292 average: 0/238
+[09] |   |   |   |   |   |   |   |   |   randomTick total:61292/61292 average: 238/238
+[08] |   |   |   |   |   |   |   |   iceandsnow total:6364/6364 average: 24/24
+[08] |   |   |   |   |   |   |   |   broadcast total:4664/4664 average: 18/18
+[05] |   |   |   |   |   blockEvents total:182/182 average: 0/0
+[02] |   |   connection total:26290/44722 average: 102/174
+[03] |   |   |   livingEntityBaseTick total:8050/8050 average: 31/31
+[03] |   |   |   travel total:1028/6023 average: 4/23
+[04] |   |   |   |   rest total:4586/4586 average: 17/17
+[04] |   |   |   |   move total:409/409 average: 1/1
+[03] |   |   |   entityBaseTick total:3950/3950 average: 15/15
+[03] |   |   |   push total:409/409 average: 1/1
+[01] |   nextTickWait total:14649/32716 average: 57/127
+[02] |   |   move total:14119/14119 average: 54/54
+[02] |   |   rest total:3948/3948 average: 15/15
+
+
+-- Counter: getChunkCacheMiss --
+[00] root total:0/37292 average: 0/145
+[01] |   tick total:0/37268 average: 0/145
+[02] |   |   levels total:0/36681 average: 0/142
+[03] |   |   |   ServerLevel[flat_testing] minecraft:overworld total:0/36681 average: 0/142
+[04] |   |   |   |   tick total:0/36681 average: 0/142
+[05] |   |   |   |   |   chunkSource total:0/18812 average: 0/73
+[06] |   |   |   |   |   |   chunks total:0/18812 average: 0/73
+[07] |   |   |   |   |   |   |   pollingChunks total:0/18812 average: 0/73
+[08] |   |   |   |   |   |   |   |   tickBlocks total:0/10478 average: 0/40
+[09] |   |   |   |   |   |   |   |   |   randomTick total:10478/10478 average: 40/40
+[08] |   |   |   |   |   |   |   |   iceandsnow total:6270/6270 average: 24/24
+[08] |   |   |   |   |   |   |   |   broadcast total:2064/2064 average: 8/8
+[05] |   |   |   |   |   entities total:0/12971 average: 0/50
+[06] |   |   |   |   |   |   blockEntities total:0/7539 average: 0/29
+[07] |   |   |   |   |   |   |   minecraft:beehive total:2313/2313 average: 9/9
+[07] |   |   |   |   |   |   |   minecraft:hopper total:1542/1542 average: 6/6
+[07] |   |   |   |   |   |   |   minecraft:skull total:1285/1285 average: 5/5
+[07] |   |   |   |   |   |   |   minecraft:ender_chest total:514/514 average: 2/2
+[07] |   |   |   |   |   |   |   minecraft:chest total:514/514 average: 2/2
+[07] |   |   |   |   |   |   |   minecraft:furnace total:317/317 average: 1/1
+[07] |   |   |   |   |   |   |   minecraft:bell total:283/283 average: 1/1
+[07] |   |   |   |   |   |   |   minecraft:trapped_chest total:257/257 average: 1/1
+[07] |   |   |   |   |   |   |   minecraft:shulker_box total:257/257 average: 1/1
+[07] |   |   |   |   |   |   |   minecraft:campfire total:257/257 average: 1/1
+[06] |   |   |   |   |   |   tick total:0/5432 average: 0/21
+[07] |   |   |   |   |   |   |   minecraft:armor_stand total:0/3056 average: 0/11
+[08] |   |   |   |   |   |   |   |   travel total:0/1914 average: 0/7
+[09] |   |   |   |   |   |   |   |   |   move total:1914/1914 average: 7/7
+[08] |   |   |   |   |   |   |   |   livingEntityBaseTick total:759/759 average: 2/2
+[08] |   |   |   |   |   |   |   |   entityBaseTick total:383/383 average: 1/1
+[07] |   |   |   |   |   |   |   minecraft:boat total:2313/2313 average: 9/9
+[07] |   |   |   |   |   |   |   minecraft:item_frame total:43/43 average: 0/0
+[07] |   |   |   |   |   |   |   chunkCheck total:20/20 average: 0/0
+[05] |   |   |   |   |   tickPending total:0/4846 average: 0/18
+[06] |   |   |   |   |   |   ticking total:4111/4846 average: 15/18
+[07] |   |   |   |   |   |   |   execute as @a at @s unless entity @e[tag=warpPoint,distance=0..1] run scoreboard players set @s Status 0 total:735/735 average: 2/2
+[05] |   |   |   |   |   blockEvents total:52/52 average: 0/0
+[02] |   |   connection total:178/587 average: 0/2
+[03] |   |   |   entityBaseTick total:280/280 average: 1/1
+[03] |   |   |   travel total:0/71 average: 0/0
+[04] |   |   |   |   move total:71/71 average: 0/0
+[03] |   |   |   livingEntityBaseTick total:58/58 average: 0/0
+[01] |   nextTickWait total:0/24 average: 0/0
+[02] |   |   move total:24/24 average: 0/0
+
+
+-- Counter: getEntities --
+[00] root total:0/41863 average: 0/162
+[01] |   tick total:0/41431 average: 0/161
+[02] |   |   levels total:0/40146 average: 0/156
+[03] |   |   |   ServerLevel[flat_testing] minecraft:overworld total:0/40146 average: 0/156
+[04] |   |   |   |   tick total:0/40146 average: 0/156
+[05] |   |   |   |   |   entities total:0/39889 average: 0/155
+[06] |   |   |   |   |   |   tick total:0/20614 average: 0/80
+[07] |   |   |   |   |   |   |   minecraft:armor_stand total:0/13224 average: 0/51
+[08] |   |   |   |   |   |   |   |   travel total:0/6612 average: 0/25
+[09] |   |   |   |   |   |   |   |   |   move total:6612/6612 average: 25/25
+[08] |   |   |   |   |   |   |   |   push total:6612/6612 average: 25/25
+[07] |   |   |   |   |   |   |   minecraft:boat total:3341/6682 average: 13/26
+[08] |   |   |   |   |   |   |   |   move total:3341/3341 average: 13/13
+[07] |   |   |   |   |   |   |   minecraft:item_frame total:708/708 average: 2/2
+[06] |   |   |   |   |   |   blockEntities total:0/19275 average: 0/75
+[07] |   |   |   |   |   |   |   minecraft:hopper total:19275/19275 average: 75/75
+[05] |   |   |   |   |   tickPending total:0/257 average: 0/1
+[06] |   |   |   |   |   |   ticking total:0/257 average: 0/1
+[07] |   |   |   |   |   |   |   execute as @a at @s unless entity @e[tag=warpPoint,distance=0..1] run scoreboard players set @s Status 0 total:257/257 average: 1/1
+[02] |   |   connection total:771/1285 average: 3/5
+[03] |   |   |   travel total:0/257 average: 0/1
+[04] |   |   |   |   move total:257/257 average: 1/1
+[03] |   |   |   push total:257/257 average: 1/1
+[01] |   nextTickWait total:216/432 average: 0/1
+[02] |   |   move total:216/216 average: 0/0
+
+
+-- Counter: runTask --
+[00] root total:0/2053 average: 0/7
+[01] |   nextTickWait total:2053/2053 average: 7/7
+
+
+-- Counter: tickNonPassenger --
+[00] root total:0/42552 average: 0/165
+[01] |   tick total:0/42552 average: 0/165
+[02] |   |   levels total:0/42552 average: 0/165
+[03] |   |   |   ServerLevel[flat_testing] minecraft:overworld total:0/42552 average: 0/165
+[04] |   |   |   |   tick total:0/42552 average: 0/165
+[05] |   |   |   |   |   entities total:0/42552 average: 0/165
+[06] |   |   |   |   |   |   tick total:0/42552 average: 0/165
+[07] |   |   |   |   |   |   |   minecraft:item_frame total:32342/32342 average: 125/125
+[07] |   |   |   |   |   |   |   minecraft:armor_stand total:6612/6612 average: 25/25
+[07] |   |   |   |   |   |   |   minecraft:boat total:3341/3341 average: 13/13
+[07] |   |   |   |   |   |   |   minecraft:player total:257/257 average: 1/1
+
+
+--- END COUNTER DUMP ---
+

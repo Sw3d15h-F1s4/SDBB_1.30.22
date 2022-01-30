@@ -1,0 +1,96 @@
+menu_title: 'Main Skins Menu'
+open_command: skinsmenu
+size: 54
+
+items:
+  'dripsam':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWE3Y2YxZmJjYzBiMzllNDNjYWM1MmFmYmZhOGEyNTIwOWNmMTA0ODUyOWJkMWU4N2U4NjM5YTZhMjIxMDljZiJ9fX0=
+    slot: 10
+    display_name: "Drip Sam Skins..."
+    click_commands:
+      - '[openguimenu] dripsam_menu'
+  'billclinton':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQxMjcxYjQyMjhiNWEzNzhhODlmOGNkNzI5YjZhNDk4NjUwYTYyOTA5NWJhOTg4ODdmN2M0M2VlMDZkZTg0YSJ9fX0=
+    slot: 12
+    display_name: "Bill Clinton Skins..."
+    click_commands:
+      - '[openguimenu] billclinton_menu'
+  'hotsuke':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODlkYjA1MzQ5Nzc2MWI2YzZmYTJmZTAzM2U2OTM5YjQxM2FkNjIwZTQ5Y2FmZTg1ZjhkZTMxZmI0MjgyZDM1NCJ9fX0=
+    slot: 14
+    display_name: "Hotsuke Skins..."
+    click_commands:
+      - '[openguimenu] hotsuke_menu'
+  'bigfloppa':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZjZTkwYmNmMmQyY2NlNDZjMzA5NzRjODJhZTAxNWY1ZDllY2U1MWVhNjE5N2RkODdjNmUwNDc4NjliNjFjNCJ9fX0=
+    slot: 16
+    display_name: "Big Floppa Skins..."
+    click_commands:
+      - '[openguimenu] bigfloppa_menu'
+  'erased':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ4MTMxYWJjYzQxOGUyOTE4N2Q4NzE3YThmODgzNTE5NDQ5NzA0ZDg3YWUyMzhjZWRjYWIyZTgwYTE3OTYwMSJ9fX0=
+    slot: 19
+    display_name: "Erased is Last Skins..."
+    click_commands:
+      - '[openguimenu] erased_menu'
+  'hibbins':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2I0NDE2NzM2ZTRjYTdhMTEyODgzN2NiYjc0NWM3ZGM5NzhhYzVmZjVhMjMxYWYzY2Q4MzhiZTViMjllNzUwNiJ9fX0=
+    slot: 21
+    display_name: "Mistress Hibbins Skins..."
+    click_commands:
+      - '[openguimenu] hibbins_menu'
+  'reaper':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM1YjkzZDJlNDMzNTYyZThlNTAyNzIxNmMwNjkxZTJiN2UzYjZkMTIxYTBiZjY5YzlhOWIzMTQ2M2RkNjYyYyJ9fX0=
+    slot: 23
+    display_name: "Reaper Skins..."
+    click_commands:
+      - '[openguimenu] reaper_menu'
+  'reiayanami':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RiMGYxYzBiYjI4NTMzZWQyOTA2MGM3MzhjZTAwYmNhYTA5MzI3YjJjNWRhOGM3ZTc4N2YwMDU5YTdlZWUzMiJ9fX0=
+    slot: 25
+    display_name: "Rei Ayanami Skins..."
+    click_commands:
+      - '[openguimenu] reiayanami_menu'
+  'sonicocnevin':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYyNWNiZmJiMmY4NmZlMDBjMDE4OWExZGJjYWZjNjA5OTMzNWExNGJjNWFhZGRiZjJlYTRhMjk5ZDNmZGQ1YyJ9fX0=
+    slot: 28
+    display_name: "Charne_3 Skins..."
+    click_commands:
+      - '[openguimenu] sonicnevin_menu'
+  'grug':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMzM2YzZmQ3M2I4MGI0ZjgzMGE0NjdiZGI4ZjQzZGZkY2FkNmUzODVmNDkyMTQ4OTdjMWI4NjIzYjA0MDdjIn19fQ==
+    slot: 30
+    display_name: "Grug Stalin Skins..."
+    click_commands:
+      - '[openguimenu] grugstalin_menu'
+  'liam':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWYwM2U4OWNjNjcwZjk2YzFhYjk1Mjc3M2I2NTllMjA2MWNiMzc1Y2Q3ZDc5MWJmYTJjMGVjMmIyNGEzMjI0ZCJ9fX0=
+    slot: 32
+    display_name: "Liam Skins..."
+    click_commands:
+      - '[openguimenu] liam_menu'
+  'snowmeiser':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU2NGFkYWZlNTRjMGUwZDkxM2UxZWRjMmQ0OTY3MGY4MTA4OGRmMDRkZGQ4M2Y5YmFmZGFlODk4ZDc1ZWZiZSJ9fX0=
+    slot: 34
+    display_name: "Snow Meiser Skins..."
+    click_commands:
+      - '[openguimenu] snowmeiser_menu'
+  'sephiroth':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjUwMGI0ZDA2ZmQzNWYzZmYxMTUyZjBiNjExOGIzODNmNDc4OGE2NzRmYTk3MTYwOWFjNDgzZTJlMDExMGUzOSJ9fX0=
+    slot: 37
+    display_name: "Sephiroth Skins..."
+    click_commands:
+      - '[openguimenu] sephiroth_menu'
+  'bezos':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyZjllNGRlNDI2M2JhNTA3Y2EyMjRlN2Q3NjAyNDVmOThjY2ZlN2QyODk5MWQ0ODAxNjE0YmM1ZjEzN2JhZiJ9fX0=
+    slot: 39
+    display_name: "Jeff Bezos Skins..."
+    click_commands:
+      - '[openguimenu] bezos_menu'
+  'resetskin':
+    material: BARRIER
+    slot: 49
+    display_name: "Reset Skin"
+    click_commands:
+      - '[player] skins reset'
+      - '[close]'

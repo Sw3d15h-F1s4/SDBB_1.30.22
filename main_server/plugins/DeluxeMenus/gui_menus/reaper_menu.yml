@@ -1,0 +1,51 @@
+menu_title: 'Reaper of the Lost Fortress'' Skins'
+open_command: reaperskins
+size: 9
+
+items:
+  'defaultskin':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM1YjkzZDJlNDMzNTYyZThlNTAyNzIxNmMwNjkxZTJiN2UzYjZkMTIxYTBiZjY5YzlhOWIzMTQ2M2RkNjYyYyJ9fX0=
+    display_name: "&r&eDefault Skin"
+    lore:
+      - "Basic Reaper Skin"
+    slot: 0
+    click_commands:
+     - '[player] skin url https://i.imgur.com/oOKziWh.png'
+     - '[close]'
+  'grim':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM2NWNjMWJlM2VjOGZlODgyMmU3M2NhOTM1OWVkMzQwMjdmNTIxMzVhNDZiNmUyYTRjM2NmYjg0NWNkMGVmNSJ9fX0=
+    slot: 2
+    display_name: "&r&a&lGrim from B & M"
+    lore:
+     - "Rare"
+    click_commands:
+     - '[player] skin url https://i.imgur.com/IyxBaIr.png'
+     - '[close]'
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: skins.reaper.grim
+  'whitecloak':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzI4NWQzMDM5MmExY2M1ZWZjYzk1OTA4YjcxN2IxOTg2MDQ3N2VlNmM0M2Y1ZjQyNWRkNmY2YzU3ZWU4ZGI4NSJ9fX0=
+    slot: 3
+    display_name: "&r&aWhite Cloak Red Eyes"
+    lore:
+     - "Common"
+    click_commands:
+     - '[player] skin url https://i.imgur.com/nZaVvx6.png'
+     - '[close]'
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: skins.reaper.wcre
+  
+  'returntomain':
+    material: BARRIER
+    slot: 8
+    display_name: '&r&aReturn to Main Menu'
+    lore:
+      - 'click to return.'
+    click_commands:
+      - '[openguimenu] skins_menu'

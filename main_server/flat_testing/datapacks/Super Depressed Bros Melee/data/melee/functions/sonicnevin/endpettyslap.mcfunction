@@ -1,0 +1,8 @@
+##
+ # endpettyslap.mcfunction
+ # Super Sad Bros Melee
+ #
+ # Created by Sw3d15h_F1s4
+##
+
+replaceitem entity @s hotbar.0 enchanted_book{display:{Name:'{"text":"Jon Krakauer\'s \\"Everest\\"","color":"light_purple","bold":true}',Lore:['{"text":"A used Copy of","color":"gold","bold":true,"italic":false}','{"text":"Everest","color":"gold","bold":true,"italic":false}']},HideFlags:61,Enchantments:[{id:"minecraft:thorns",lvl:1s},{id:"minecraft:sharpness",lvl:4s},{id:"minecraft:knockback",lvl:3s}],AttributeModifiers:[{AttributeName: "generic.attack_damage", Name: "generic.attack_damage", Amount: 5, Operation: 0, UUID: [I; 0, 122188, 0, 15135], Slot: "mainhand"},{AttributeName: "generic.attack_damage", Name: "generic.attackDamage", Amount: 0, Operation: 0, UUID: [I; 0, 478303, 0, 243290], Slot: "offhand"},{AttributeName: "generic.armor", Name: "generic.armor", Amount: 4, Operation: 0, UUID: [I; 0, 870567, 0, 985480], Slot: "mainhand"},{AttributeName: "generic.armor_toughness", Name: "generic.armorToughness", Amount: 0, Operation: 0, UUID: [I; 0, 218145, 0, 620901], Slot: "mainhand"},{AttributeName: "generic.attack_speed", Name: "generic.attackSpeed", Amount: 0, Operation: 0, UUID: [I; 0, 688143, 0, 677908], Slot: "mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2d,Operation:0,Slot:"mainhand",UUID:[I;112,2323,3246,32434230]}],StoredEnchantments:[{id:"minecraft:mending",lvl:10s}]} 1

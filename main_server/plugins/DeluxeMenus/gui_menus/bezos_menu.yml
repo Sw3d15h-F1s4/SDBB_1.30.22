@@ -1,0 +1,23 @@
+menu_title: 'Jeff Bezos''s Skins'
+open_command: jeffbezosskin
+size: 9
+
+items:
+  'defaultskin':
+    material: basehead-e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyZjllNGRlNDI2M2JhNTA3Y2EyMjRlN2Q3NjAyNDVmOThjY2ZlN2QyODk5MWQ0ODAxNjE0YmM1ZjEzN2JhZiJ9fX0=
+    display_name: "&r&eDefault Skin"
+    lore:
+      - "Basic Jeff Bezos Skin"
+    slot: 0
+    click_commands:
+     - '[player] skin url https://i.imgur.com/lMAFAP8.png'
+     - '[close]'
+
+  'returntomain':
+    material: BARRIER
+    slot: 8
+    display_name: 'Return to Main Menu'
+    lore:
+      - 'click to return.'
+    click_commands:
+      - '[openguimenu] skins_menu'
