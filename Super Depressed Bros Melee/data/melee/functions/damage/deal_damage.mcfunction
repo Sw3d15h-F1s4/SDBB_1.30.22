@@ -1,0 +1,1 @@
+execute as @e[scores={toDamage=1..}] run function melee:damage/init

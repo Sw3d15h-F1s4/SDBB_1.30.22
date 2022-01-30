@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Sw3d15h_F1s4",
+        "description": "",
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner: 'Sw3d15h_F1s4'}"
+        },
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "global:root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
