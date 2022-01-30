@@ -1,4 +1,0 @@
-execute as @a[scores={ability=1,heroType=16,abilityTimer=..0,ultTimer=..2400},nbt={SelectedItem:{tag:{Tags:["venom_takedown"]}}}] at @s run function melee:season_3/sting_v/venom_init
-execute as @a[scores={ability=1,heroType=16,ability2Timer=..0},nbt={SelectedItem:{tag:{Tags:["red_light"]}}}] at @s run function melee:season_3/sting_v/red_light
-execute as @a[scores={ability=1,heroType=16,ability3Timer=..0},nbt={SelectedItem:{tag:{Tags:["every_breath"]}}}] at @s run function melee:season_3/sting_v/walking_in_foot
-execute as @a[scores={ability=1,heroType=16,ultTimer=..0},nbt={SelectedItem:{tag:{Tags:["sting_ult"]}}}] at @s run function melee:season_3/sting_v/cocaine

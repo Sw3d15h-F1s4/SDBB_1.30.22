@@ -1,1 +1,0 @@
-data modify entity @e[tag=doubledutch, limit=1] Motion set value [0.0,1.0,0.0]

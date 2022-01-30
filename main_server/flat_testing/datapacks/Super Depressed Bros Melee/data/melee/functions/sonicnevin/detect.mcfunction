@@ -1,4 +1,0 @@
-execute as @a[scores={ability=1,heroType=9,abilityTimer=..0},nbt={SelectedItem:{tag:{Tags:["assimilation"]}}}] at @s run function melee:sonicnevin/assimilation
-execute as @a[scores={ability=1,heroType=9,ability2Timer=..0},nbt={SelectedItem:{tag:{Tags:["shutin"]}}}] at @s run function melee:sonicnevin/shutin
-execute as @a[scores={ability=1,heroType=9,ability3Timer=..0},nbt={SelectedItem:{tag:{Tags:["petty"]}}}] at @s run function melee:sonicnevin/pettyslap
-execute as @a[scores={ability=1,heroType=9,ultTimer=..0},nbt={SelectedItem:{tag:{Tags:["bigsucc"]}}}] at @s run function melee:sonicnevin/bigboysucc
